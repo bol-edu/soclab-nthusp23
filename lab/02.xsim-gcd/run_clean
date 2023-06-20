@@ -1,2 +1,0 @@
-rm -rf xsim.dir/ *.log *.pb *.jou *.wdb
-rm -f *.vcd
