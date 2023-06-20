@@ -1,6 +1,6 @@
-# Run Xilinx Vivado Simulation (XSIM) of GCD Design
+# Run Xilinx Vivado Simulation (XSIM) of GCD
 
-## Toolchain Prerequisites
+## Toolchain prerequisites
 * [Ubuntu 20.04+](https://releases.ubuntu.com/focal/)
 * [Xilinx Vitis 2022.1](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2022-1.html) (builtin XSIM and Vivado)
 * [GTKWave v3.3.103](https://gtkwave.sourceforge.net/)
@@ -11,13 +11,13 @@ $ sudo apt update
 $ sudo apt install gtkwave -y
 ```
 
-## Git Clone XSIM-GCD
+## Git clone soclab-nthusp23
 ```console
 $ sudo apt install git -y
 $ git clone https://github.com/bol-edu/soclab-nthusp23 ~/soclab-nthusp23
 ```
 
-## Run GCD XSIM
+## Run xsim-gcd
 ```console
 hls05@HLS05:~$ cd ~/soclab-nthusp23/lab/02.xsim-gcd
 hls05@HLS05:~/soclab-nthusp23/lab/02.xsim-gcd$ ./run_xsim
@@ -57,20 +57,26 @@ $stop called at time : 507500 ps : File "/home/hls05/soclab-nthusp23/lab/02.xsim
 exit
 INFO: [Common 17-206] Exiting xsim at Tue Jun 20 10:57:49 2023...
 ```
-## Use GTKWave to view simulated GCD waveform
+## Use GTKWave to view simulated xsim-gcd waveform
 ```console
 hls05@HLS05:~/soclab-nthusp23/lab/02.xsim-gcd$ gtkwave waveforms.gtkw
 ```
 ![gcd_waveforms](https://github.com/bol-edu/soclab-nthusp23/assets/98332019/9fffca84-7f76-4f4e-ba10-3e3c247c04ee)
 
-## run_xsim Shell Script using Xilinx xvlog/xelab/xsim Command-line
+## run_xsim shell script using Xilinx xvlog/xelab/xsim commands
 ```console
 xvlog -f ./include.rtl.list.xsim seq_gcd_tb.v
 xelab -top seq_gcd_tb -snapshot seq_gcd_tb_elab
 xsim seq_gcd_tb_elab -R
 ```
 
-## Add Hierarchical Verilog Designs to include.rtl.list.xsim
+## run_clean shell script removing simulated temporary files and vcd file
+```console
+rm -rf xsim.dir/ *.log *.pb *.jou *.wdb
+rm -f *.vcd
+```
+
+## Add hierarchical Verilog designs to include.rtl.list.xsim
 ```
 # design sources
 ./seq_gcd.v
