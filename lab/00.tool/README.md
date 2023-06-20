@@ -1,4 +1,4 @@
-## Install Xilinx Vitis on Ubuntu 20.04+ Machine
+## Install Xilinx Vitis 2022.1 on Ubuntu 20.04+ Machine
 The Xilinx Vitis needs minimum 16 GB system memory (32 GB+ is recommended) on a physical/virtual Ubuntu 20.04+ machine.
 * Install necessary dependencies before Vitis installation: `sudo apt install libtinfo5 libncurses5 -y`
 * Offical installation guide: https://docs.xilinx.com/r/2022.1-English/ug1400-vitis-embedded/Installation-Requirements  
