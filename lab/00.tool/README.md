@@ -10,5 +10,6 @@
 * [Manual of Vitis_on_Ubuntu_VM](https://github.com/bol-edu/soclab-nthusp23/files/11901800/Vitis_on_Ubuntu_VM.pdf)
 
 ## Notice
-Don't click Yes, Upgrade Now or execute `sudo apt upgrade` in your Ubuntu VM. The Vitis maybe not working.
+Do not click Yes, Upgrade Now or execute `sudo apt upgrade` in your Ubuntu VM. The Vitis maybe not working.
+
 ![000](https://github.com/bol-edu/soclab-nthusp23/assets/98332019/bc94389f-08df-41df-81ce-a0749facc468)
