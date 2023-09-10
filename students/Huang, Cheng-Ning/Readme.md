@@ -1,0 +1,1 @@
+- Please refer to https://github.com/HCN1222/Seminar_in_SOC.git
