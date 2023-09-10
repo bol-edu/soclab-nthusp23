@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/soclab-nthusp23/lab/02.xsim-gcd/seq_gcd.v" into library work
+INFO: [VRFC 10-311] analyzing module seq_gcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/soclab-nthusp23/lab/02.xsim-gcd/seq_gcd_tb.v" into library work
+INFO: [VRFC 10-311] analyzing module seq_gcd_tb

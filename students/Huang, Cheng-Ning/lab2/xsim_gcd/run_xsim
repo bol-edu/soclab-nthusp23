@@ -1,0 +1,5 @@
+rm -rf xsim.dir/ *.log *.pb *.jou *.wdb
+
+xvlog -f ./include.rtl.list.xsim seq_gcd_tb.v
+xelab -top seq_gcd_tb -snapshot seq_gcd_tb_elab
+xsim seq_gcd_tb_elab -R
